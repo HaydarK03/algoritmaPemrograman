@@ -1,0 +1,13 @@
+.hitungan{
+    display: flex;
+    flex-direction: row;
+}
+
+.hitungan p{
+    margin-left: 1rem;
+}
+
+button{
+    padding: 3px 6px;
+    margin-top: 1rem;
+}
