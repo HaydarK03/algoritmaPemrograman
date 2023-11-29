@@ -1,35 +1,28 @@
-// var input = prompt("masukan jumlah penghasilan anda perbulan:")
-var x = 25
-var y = 1000 
-var z = x/y
+var x = 25;
+var y = 1000 ;
+var z = x/y;
+var a = 7000000
 
+let inputText = document.getElementById("penghasilan");
+let inputButton = document.getElementById("button");
+let reset = document.getElementById('reset');
 
-// function hasil(){
-//     var hitung = input * z
-//     return hitung
-// }
-// alert("zakat yang ha    rus dibayarkan :" + hasil())
-
-
-// ambil  variabel untuk menampung calue
-
-
-let inputText = document.getElementById("penghasilan")
-let inputButton = document.getElementById("button")
-let print = document.getElementById("hasil")
-
-// function getValue(){
-//     alert(inputText.value);
-// }
-// inputButton.addEventListener("click",getValue)
-
-
-function hitung(){
+// untuk perhitungan
+function getHitung(){
     var hasil = inputText.value * z
-    console.log(hasil)
+    return hasil
+};
 
-}
+// untuk menampilkan value
+inputButton.addEventListener('click', function(){
+    document.getElementById("hasil").innerText = getHitung()
+});
 
-inputButton.addEventListener("click", hitung)
+// untuk mereset value
+reset.addEventListener('click', function(){
+    document.getElementById('hasil').innerText = 0
+});
 
-
+if (inputText.value < a){
+    document.getElementById('hasil').innerText = 0
+};

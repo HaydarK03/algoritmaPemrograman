@@ -5,19 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css  ">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>  
-    <h1>PERHITUNGAN ZAKAT FITRAH</h1>
-    <p>masukan penghasilan perbulan anda</p>
-    <div class="hitungan">
-        <input type="number" id="penghasilan"> <p>X 2.5%</p>
+    <div class="heading">
+        <div class="judul">
+            <h1>Kalkulator Zakat</h1>
+        </div>
+        <div class="desc">
+            <p>Zakat penghasilan atau yang dikenal juga sebagai zakat profesi adalah bagian dari zakat maal yang wajib dikeluarkan atas harta yang berasal dari pendapatan / penghasilan rutin dari pekerjaan yang tidak melanggar syariah. Nishab zakat penghasilan sebesar 85 gram emas per tahun. Kadar zakat penghasilan senilai 2,5%. Dalam praktiknya, zakat penghasilan dapat ditunaikan setiap bulan dengan nilai nishab per bulannya adalah setara dengan nilai seperduabelas dari 85 gram emas, dengan kadar 2,5%. Jadi apabila penghasilan setiap bulan telah melebihi nilai nishab bulanan, maka wajib dikeluarkan zakatnya sebesar 2,5% dari penghasilannya tersebut. </p>
+            <i>(Sumber: Al Qur'an Surah Al Baqarah ayat 267, Peraturan Menteri Agama Nomor 31 Tahun 2019, Fatwa MUI Nomor 3 Tahun 2003, dan pendapat Shaikh Yusuf Qardawi).</i>
+        </div>
     </div>
-    
-    <button id="button">=</button>
 
-    <div class="hasil">
-        <p id="hasil"></p>
+    <div class="form">
+        <form action="">
+            <div class="info">
+                <p>Masukan penghasilan per bulan anda :</p>
+
+            </div>
+            
+            <div class="hitungan">
+                <p>Rp.</p><input type="number" id="penghasilan">
+            </div>
+
+                <button type="button" id="button">Hasil</butt>
+                <button type="reset" id="reset">Reset</button>
+                
+            <div class="output">
+                <div class="outputDesc">
+                    <p>Zakat yang harus dibayarkan:</p>
+                </div>
+                <div class="hasil">
+                    <p id="hasil">0</p>
+                </div>
+            </div>
+        </form>
     </div>
+
 
 
 
