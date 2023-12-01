@@ -3,11 +3,13 @@ let inputButton = document.getElementById("button");
 let reset = document.getElementById('reset');
 let output = document.getElementById('hasil');
 
-// untuk menampilkan value
+// main function
 inputButton.addEventListener('click', function(){
     if (inputText.value > 7897619)  {
+        // get hasil
         output.innerText = inputText.value * (25/1000);
         
+        // riset button
         reset.addEventListener('click', function(){
             output.innerText = 0
         });
@@ -17,6 +19,3 @@ inputButton.addEventListener('click', function(){
         alert('Anda tidak wajib membayar zakat')
     }
 });
-
-
-// untuk mereset value
