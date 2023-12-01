@@ -1,23 +1,16 @@
-var x = 25;
-var y = 1000 ;
-var z = x/y;
-var a = 7897619
-
 let inputText = document.getElementById("penghasilan");
 let inputButton = document.getElementById("button");
 let reset = document.getElementById('reset');
 let output = document.getElementById('hasil');
 
-// untuk perhitungan
-function getHitung(){
-        var hasil = inputText.value * z
-        return hasil
-};
-
 // untuk menampilkan value
 inputButton.addEventListener('click', function(){
-    if (inputText.value > a)  {
-        output.innerText = getHitung()
+    if (inputText.value > 7897619)  {
+        output.innerText = inputText.value * (25/1000);
+        
+        reset.addEventListener('click', function(){
+            output.innerText = 0
+        });
     }
     else {
         output.innerText = 0
@@ -27,6 +20,3 @@ inputButton.addEventListener('click', function(){
 
 
 // untuk mereset value
-reset.addEventListener('click', function(){
-    output.innerText = 0
-});
